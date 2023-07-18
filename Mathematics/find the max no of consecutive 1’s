@@ -1,0 +1,19 @@
+# You are given a large number made of only 0’s and 1’s.Your task is to find the max no of consecutive 1’s. If there are no 1’s print -1
+
+n =input()
+l = len(n)
+count = 0
+x = []
+for i in range(0,l-1):
+    if n[i] == '1' and n[i+1] == n[i]:
+        count = count+1
+        x.append(count)
+    else:
+        count = 0
+
+m = len(x)
+if m == 0:
+    print('-1')
+else:
+    y = max(x) + 1
+    print(y)
