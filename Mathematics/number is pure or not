@@ -1,0 +1,17 @@
+# A pure number is a number whose sum of digits is multiple of 3.
+
+a = input()
+l = 0
+for j in str(a):
+    l += int(j)
+    
+if l % 3 == 0:
+    print('yes')
+else:
+    print('not')
+
+
+Sample Input :
+13
+Sample Output :
+not
