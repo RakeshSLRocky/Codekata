@@ -1,0 +1,17 @@
+number = int(input())
+l = []
+for i in range(1,number+1):
+    reverse = 0
+    temp = i
+    
+    while(temp > 0):
+        Reminder = temp % 10
+        reverse = (reverse * 10) + Reminder
+        temp = temp //10
+        
+        
+    
+    if(i == reverse):
+        l.append(1)
+              
+print(len(l))
