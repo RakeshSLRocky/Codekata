@@ -1,0 +1,22 @@
+from collections import Counter
+
+# Step 1
+n = int(input())
+
+# Step 2
+arr = list(map(int, input().split()))
+
+# Step 3
+counter = Counter(arr)
+
+# Step 4
+min_count = min(counter.values())
+
+# Step 5
+least_occurrences = [num for num, count in counter.items() if count == min_count]
+
+# Step 6
+least_occurrences.sort(reverse=True)
+
+# Step 7
+print(*least_occurrences)
