@@ -1,0 +1,21 @@
+# A great number is a number whose sum of digits let (m) and product of digits let(j) when summed together gives the number back
+
+# m+j=n
+
+n = int(input())
+sum1 = 0
+prod = 1
+l = str(n)
+for i in range(0,len(l)):
+    k = int(l[i])
+    sum1 = sum1 + k
+
+for k in range(0,len(l)):
+    b = int(l[k])
+    prod = prod * b
+    
+a = sum1 + prod
+if a == n:
+    print('Great')
+else:
+    print('no')
